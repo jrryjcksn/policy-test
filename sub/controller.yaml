@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wks-controller
-  namespace: systemer
+  namespace: system
   labels:
     acme/production-level: critical
     name: wks-controller
