@@ -24,7 +24,7 @@ metadata:
     control-plane: wks-controller
     controller-tools.k8s.io: "1.0"
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       name: wks-controller
