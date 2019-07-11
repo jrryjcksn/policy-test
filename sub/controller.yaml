@@ -1,9 +1,17 @@
 apiVersion: v1
+kind: Service
+metadata:
+  name: gerf
+  namespace: crotty
+  labels:
+    acme/production-level: critical
+---
+apiVersion: v1
 kind: Namespace
 metadata:
   name: foozy
   labels:
-    acme/production-level: critibal
+    acme/production-level: critical
 ---
 apiVersion: apps/v1
 kind: Deployment
