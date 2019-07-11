@@ -12,7 +12,7 @@ check[result] {
   item := items[_]
   item.kind == "Deployment"
   item.metadata.labels["acme/production-level"] == "critical"
-  item.spec.replicas < 3
-  result := {"deny": sprintf(`Critical production deployment: %q may not have fewer than 3 replicas`, [item.metadata.name])}
+  item.spec.replicas < 2
+  result := {"deny": sprintf(`Critical production deployment: %q may not have fewer than 2 replicas`, [item.metadata.name])}
 }
 
