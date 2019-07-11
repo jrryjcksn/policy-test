@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: foozy
   labels:
-    acme/production-level: critical
+    acme/production-level: critibal
 ---
 apiVersion: apps/v1
 kind: Deployment
