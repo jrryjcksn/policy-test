@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: gerf
-  namespace: crottysorfolong
+  namespace: crottysorfolongo
   labels:
     acme/production-level: critical
 ---
